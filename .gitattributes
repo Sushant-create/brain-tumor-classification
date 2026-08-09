@@ -1,0 +1,19 @@
+# Normalize line endings
+* text=auto eol=lf
+
+# Notebooks are JSON - diff them as text but treat outputs as generated
+*.ipynb text
+*.ipynb linguist-generated=true
+
+# Binary files - do not attempt text diffs
+*.h5 binary
+*.keras binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.bmp binary
+*.tiff binary
+
+# Ensure shell/py scripts keep LF endings on Windows checkouts
+*.py text eol=lf
+*.sh text eol=lf

@@ -1,0 +1,58 @@
+# Python bytecode and cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+
+# IDE config files
+.vscode/
+.idea/
+
+# Large Datasets (MRI Image folders)
+# Add your specific folder names if they differ (e.g., Training/, Testing/)
+dataset/
+datasets/
+data/
+Training/
+Testing/
+brain_tumor_dataset/
+
+# Deep Learning / ML Model checkpoints and weights
+*.h5
+*.hdf5
+*.keras
+*.pt
+*.pth
+*.pkl
+*.pickle
+
+# Training logs and visualizations
+logs/
+.tensorboard/
+*.png
+*.jpg
+*.jpeg
+# Trained model weights (large binary, regenerate via train.py)
+model/*.h5
+model/*.keras
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# NOTE: the blanket *.png/*.jpg/*.jpeg rule above (inherited from the
+# original .gitignore) would also hide the synthetic fixtures the test
+# suite depends on, so they're explicitly un-ignored here.
+!test_samples/*.png
+!test_samples/*.jpg
+!test_samples/*.jpeg
